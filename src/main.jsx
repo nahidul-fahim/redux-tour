@@ -8,6 +8,8 @@ import {
 import Root from './Layout/Root';
 import ErrorPage from './components/ErrorPage';
 import Home from './pages/Home';
+import ReactWay from './pages/ReactContext/ReactWay';
+import ReactAuthProvider from './pages/ReactContext/ReactAuthProvider';
 
 
 const router = createBrowserRouter([
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />
+      },
+      {
+        path: "/reactWay",
+        element: <ReactWay />
       }
     ]
   },
@@ -26,6 +32,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ReactAuthProvider>
+      <RouterProvider router={router} />
+    </ReactAuthProvider>
   </React.StrictMode>,
 )

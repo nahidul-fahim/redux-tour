@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
     return (
-        <div>
-            <h2 className="text-3xl font-bold">This is homepage</h2>
+        <div className="h-[100vh] flex flex-col justify-center items-center gap-3 font-medium">
+            <Link to={"/reactWay"} className="text-xl hover:scale-105 duration-300 hover:text-[#ff5926]">React Way</Link>
         </div>
     );
 };
