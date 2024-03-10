@@ -10,6 +10,7 @@ import ErrorPage from './components/ErrorPage';
 import Home from './pages/Home';
 import ReactWay from './pages/ReactContext/ReactWay';
 import ReactAuthProvider from './pages/ReactContext/ReactAuthProvider';
+import ReduxHome from './pages/ReduxPages/ReduxHome';
 
 
 const router = createBrowserRouter([
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
       {
         path: "/reactWay",
         element: <ReactWay />
-      }
+      },
+      {
+        path: "/reduxHome",
+        element: <ReduxHome />
+      },
     ]
   },
 ]);
