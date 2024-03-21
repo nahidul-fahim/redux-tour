@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./features/counter/counterSlice"
+import logger from "./middlewares/Logger";
 
 /*
 ACTIONS: 
@@ -15,5 +16,6 @@ So, by following these steps redux is now connected with our system.
 export const store = configureStore({
     reducer: {
         counter: counterReducer,
-    }
+    },
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
