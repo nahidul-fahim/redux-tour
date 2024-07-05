@@ -19,14 +19,14 @@ function App() {
         {/* increment by value */}
         <button
           onClick={() => dispatch(incrementByValue(5))}
-          className="bg-green-700 px-4 py-1.5 font-medium text-lg text-white">
+          className="bg-green-700 px-4 py-1.5 font-medium text-lg text-white rounded">
           Increment by 5
         </button>
 
 
         <button
           onClick={() => dispatch(increment())}
-          className="bg-green-700 px-4 py-1.5 font-medium text-lg text-white">
+          className="bg-green-700 px-4 py-1.5 font-medium text-lg text-white rounded">
           Increment
         </button>
 
@@ -36,20 +36,27 @@ function App() {
 
         <button
           onClick={() => dispatch(decrement())}
-          className="bg-red-600 px-4 py-1.5 font-medium text-lg text-white">
+          className="bg-red-600 px-4 py-1.5 font-medium text-lg text-white rounded">
           Decrement
         </button>
 
         {/* increment by value */}
         <button
           onClick={() => dispatch(decrementByValue(5))}
-          className="bg-red-600 px-4 py-1.5 font-medium text-lg text-white">
+          className="bg-red-600 px-4 py-1.5 font-medium text-lg text-white rounded">
           Decrement by 5
         </button>
+      </div>
+
+
+      {/* box adding for increased counters */}
+      <div className="border border-green-800 flex justify-center items-center gap-8">
+
 
 
       </div>
-    </div>
+
+    </div >
   )
 }
 
